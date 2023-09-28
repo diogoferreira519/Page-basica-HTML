@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de cúrriculo</title>
+    
+</head>
+<body>
+    
+    <h1>Formulário de Currículo</h1>
+    <form  method="POST">
+        <fieldset>
+            <legend>Informações Pessoais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone"><br><br>
+
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco"><br><br>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Objetivo</legend>
+            <textarea name="Objetivo" id="objetivo" cols="30" rows="10"placeholder="Descreva seu objetivo"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Experiência Profissional 1</legend>
+            <label for="cargo1">Cargo:</label>
+            <input type="text" id="cargo1" name="cargo1"><br><br>
+
+            <label for="empresa1">Empresa:</label>
+            <input type="text" id="empresa1" name="empresa1"><br><br>
+
+            <label for="periodo1">Período:</label>
+            <input type="text" id="periodo1" name="periodo1"><br><br>
+
+            <label for="descricao1">Descrição das atividades:</label><br>
+            <textarea id="descricao1" name="descricao1" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experiência Profissional 2</legend>
+            <label for="cargo2">Cargo:</label>
+            <input type="text" id="cargo2" name="cargo2"><br><br>
+
+            <label for="empresa2">Empresa:</label>
+            <input type="text" id="empresa2" name="empresa2"><br><br>
+
+            <label for="periodo2">Período:</label>
+            <input type="text" id="periodo2" name="periodo2"><br><br>
+
+            <label for="descricao2">Descrição das atividades:</label><br><br>
+            <textarea id="descricao2" name="descricao2" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Experiência Profissional 3</legend>
+            <label for="cargo3">Cargo:</label>
+            <input type="text" id="cargo3" name="cargo3"><br><br>
+
+            <label for="empresa3">Empresa:</label>
+            <input type="text" id="empresa3" name="empresa3"><br><br>
+
+            <label for="periodo3">Período:</label>
+            <input type="text" id="periodo3" name="periodo3"><br><br>
+
+            <label for="descricao3">Descrição das atividades:</label><br><br>
+            <textarea id="descricao3" name="descricao3" rows="4" cols="50"></textarea>
+        </fieldset>
+
+        <br>
+        <fieldset>
+            <legend>Educação</legend>
+            <label for="instituicao">Instituição de Ensino:</label>
+            <input type="text" id="instituicao" name="instituicao"><br><br>
+
+            <label for="curso">Curso:</label>
+            <input type="text" id="curso" name="curso"><br><br>
+
+            <label for="conclusao">Ano de Conclusão:</label>
+            <input type="text" id="conclusao" name="conclusao">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Habilidades</legend>
+            <p>Selecione suas habilidades:</p>
+            <label>
+                <input type="checkbox" name="habilidades[]" value="HTML">HTML
+            </label><br>
+            <label>
+                <input type="checkbox" name="habilidades[]" value="CSS"> CSS
+            </label><br>
+            <label>
+                <input type="checkbox" name="habilidades[]" value="JavaScript"> JavaScript
+            </label><br>
+            <label>
+                <input type="checkbox" name="habilidades[]" value="PHP"> PHP
+            </label><br>
+            <label>
+                <input type="checkbox" name="habilidades[]" value="Vue.JS"> PHP
+            </label><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Cursos</legend>
+            <textarea id="cursos" name="cursos" rows="4" cols="50"></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Informações Complementares</legend>
+            <textarea id="infos" name="infos" rows="4" cols="50"></textarea>
+        </fieldset>
+        <br>
+        <input type="submit" value="Enviar Currículo">
+
+    </form>
+</body>
+</html>
